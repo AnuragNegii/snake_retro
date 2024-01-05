@@ -41,6 +41,9 @@ public class snake_Movement : MonoBehaviour
         if (other.gameObject.CompareTag("Wall")){
             SceneManager.LoadScene(0);
         }
+        if (other.gameObject.CompareTag("Body")){
+            SceneManager.LoadScene(0);
+        }
         if (other.gameObject.CompareTag("Food")){
             Grow();
         }
